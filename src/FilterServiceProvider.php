@@ -1,6 +1,6 @@
 <?php
 
-namespace PosLifestyle\DateRangeFilter;
+namespace Yax\DateRangeFilter;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
@@ -20,7 +20,7 @@ class FilterServiceProvider extends ServiceProvider
             Nova::style('date-range-filter', __DIR__.'/../dist/css/filter.css');
         });
     }
-    
+
     /**
      * Register any application services.
      *

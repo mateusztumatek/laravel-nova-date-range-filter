@@ -1,6 +1,6 @@
 <?php
 
-namespace PosLifestyle\DateRangeFilter;
+namespace Yax\DateRangeFilter;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use InvalidArgumentException;
 use Laravel\Nova\Filters\Filter;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use PosLifestyle\DateRangeFilter\Enums\Config;
+use Yax\DateRangeFilter\Enums\Config;
 
 class DateRangeFilter extends Filter
 {
@@ -17,12 +17,12 @@ class DateRangeFilter extends Filter
      * @var string
      */
     public $component = 'date-range-filter';
-    
+
     public function __construct( public $name = 'Created at', public string $column = Model::CREATED_AT, public array $config = [])
     {
         $this->configure();
     }
-    
+
     /**
      * Apply the filter to the given query.
      *
@@ -40,7 +40,7 @@ class DateRangeFilter extends Filter
                 Carbon::createFromFormat('Y-m-d', $value[1])->endOfDay(),
             ]
         );
-        
+
         return $query;
     }
 

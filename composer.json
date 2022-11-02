@@ -1,5 +1,5 @@
 {
-    "name": "pos-lifestyle/laravel-nova-date-range-filter",
+    "name": "yax/date-range-picker",
     "description": "A Laravel Nova date range filter.",
     "keywords": [
         "laravel",
@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "PosLifestyle\\DateRangeFilter\\": "src/"
+            "Yax\\DateRangeFilter\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PosLifestyle\\DateRangeFilter\\FilterServiceProvider"
+                "Yax\\DateRangeFilter\\FilterServiceProvider"
             ]
         }
     },

@@ -22,7 +22,7 @@ Simply add this filter to the `filters` method in your Nova resource.
 
 ```php
 use Illuminate\Http\Request;
-use PosLifestyle\DateRangeFilter\DateRangeFilter;
+use Yax\DateRangeFilter\DateRangeFilter;
 
 class CustomResource extends Resource
 {
@@ -188,8 +188,8 @@ All available settings are provided by the included `Config` enum. See the full 
 
 ```php
 use Illuminate\Http\Request;
-use PosLifestyle\DateRangeFilter\DateRangeFilter;
-use PosLifestyle\DateRangeFilter\Enums\Config;
+use Yax\DateRangeFilter\DateRangeFilter;
+use Yax\DateRangeFilter\Enums\Config;
 
 class CustomResource extends Resource
 {
